@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coderworld - get it!</title>
+<style>
+	/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+	header {
+		background-color: orange;
+	}
+	header p a {
+		background-color: blue;
+		padding: 1px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	body section div div {
+		background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+	}
+body div p {
+	font-size: 35px;
+	text-align: center;
+	color: #fcb900;
+}
+body aside {
+	background-color: #d4d4d4;
+}
+body h2 {
+	color: #fcb900; 
+ }
+ body article {
+	 background-color: #fc0400;
+ }
+ body article div {
+	 background-color: #fc0400;
+ }
+ .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+body section {
+	backgr
+}
+</style>
+</head>
+<body>
+	<header><p><a href="coderhome.html" target=_"blank">Sign up!</a><a href="coderlogin.html" target=_"blank">login!</a></p>
+	<h5>Sign up!</h5><h5>Login!</h5>
+	</header>
+	<article>
+	<div>
+<p>Coderworld - get your child computer programming!</p>
+</div>
+</article>
+<article>
+<h2>Buy a book on coding here!</h2>
+</article>
+<aside>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="first, middle, and last name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="someone@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="your addres">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="your city">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="your state">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="your zip">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="name on card">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="card number">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Exp month">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="Exp year">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        </aside>
+        <section><div><div class="button"> <a href="bought.html" target=_"blank">Checkout</a></div></div></section>
+      </form>
+    </div>
+  </div>
+<aside>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart 
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i> 
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="book1.html" target=_"blank">Product 1</a> <span class="price">$5</span></p>
+      <p><a href="book2.html" target=_"blank">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="book3.html" target=_"blank">Product 3</a> <span class="price">$5</span></p>
+      <p><a href="book4.html" target=_"blank">Product 4</a> <span class="price">$5</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$20</b></span></p>
+    </div>
+  </div>
+</div>
+</aside>
+<form action="action_page.php">
+  <div class="container">
+	  <h1>Newsletter</h1>
+    <p>Subscribe to our Newsletter</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <a href="">Subscribe</a>
+  </div>
+</form>
+<h1>Quick code tutorial (no sign-in required)</h1>
+<div class="dropdown">
+  <button class="dropbtn">Programming Languages</button>
+  <div class="dropdown-content">
+    <a href="#div aside">HTML</a>
+    <a href="#div article">CSS</a>
+    <a href="#div section">JavaScript</a>
+    <a href="#div footer">Python</a>
+  </div>
+</div>
+<div><aside><h1>HTML</h1>
+<h2>Description:</h2>
+<br>HTML stands for Hypertext Markup Language, but you do not need to know that right know.</br>
+<br></br>
+<input type="text" placeholder="<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>" name="code">
+</aside></div>
+<div><article><h1>CSS</h1></article></div>
+<div><section><h1>JavaScript</h1></section></div>
+<div><footer><h1>Python</h1></footer></div>
+</body>
+</html>
